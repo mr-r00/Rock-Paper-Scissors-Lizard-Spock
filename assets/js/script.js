@@ -1,3 +1,4 @@
+// code taken from Youtube tutorial //
 const playerText = document.querySelector("#playerText");
 const computerText = document.querySelector("#computerText");
 const resultText = document.querySelector("#resultText");
@@ -14,6 +15,8 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
     computerText.textContent = `Computer: ${computer}`;
     resultText.textContent = checkWinner();
 }));
+
+// code written by myself to create working game //
 
 function computerTurn() {
 
