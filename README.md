@@ -1,39 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock
 
-Welcome,
+Rock, Paper< scissors, Lizard, Spock is a site that hopes to demonstrate JavaScript in a realworld setting. The site is aimed towards fans of the popular show, The Big Bang Theory, where the game originated. The website is a fully responsive game where the player can play against a computer.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+The game included 5 buttons, each a seperate option for the player to choose from. When the player has selected their option the computer will otput a random option to counter. The result line shows the outcome of the game from the 2 options.
 
-## Codeanywhere Reminders
+_Diagram for outcomes_
+!diagram (assets/images/rock-paper-scissors-lizard-spock.png)
+A simple diagram to show the player all the possible outcomes for each option.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+_game zone_
+The game zone is contained in an area of blue to be easily differenciated from the other elements of the page.
 
-`python3 -m http.server`
+### Features to impliment in future
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- Add a score tracker 
+- Make the buttons custom icons
+- Add a player vs player system with keybinds to select options
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Testing 
 
-`http_server`
+The game produces random outcomes each time, and with no bias as to which option it picks. All the buttons produce the right outcome for the player side, and the correct result is shown for every winning & loosing combination. The game works at multiple window sizes, witht eh only gripe being the button size on potentially older or smaller devices, less than 400px.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Validation Testing
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+ - No errors were returned when passing through the official [W3C validator]
+ - 2  parse errors were returned when passing through the official [(Jigsaw) validator]
+ - No errors were found when passing through the official [Jshint validator]
+     - The following metrics were returned:
+     - There are 4 functions in this file.
+     - Function with the largest signature take 1 arguments, while the median is 0.
+     - Largest function has 7 statements in it, while the median is 3.5.
+     - The most complex function has a cyclomatic complexity value of 17 while the median is 3.5.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### unfixed bugs 
 
-To log into the Heroku toolbelt CLI:
+The 2 errors shown in the Jigsaw validator have not been fixed, they don't seem to affect the usability of the site, but are still present.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
----
+  ## credits
 
-Happy coding!
+  - A video tutorial from Bro Code was used for guidance and a base for the JS link: [https://youtu.be/n1_vHArDBRA?si=zDZ4-cnIBWEFsTvR]
+
+  ## content 
+
+  - The text and the diagram were taken from the wiki page for the show it is from, The Big Bang Theory. Link: [https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock]
